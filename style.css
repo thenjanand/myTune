@@ -20,8 +20,6 @@ body {
 }
 ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
 }
 a {
   text-decoration: none;
@@ -54,9 +52,13 @@ button {
   border: none;
   transition: 0.2s ease-in-out;
 }
-button:hover{
+button:hover {
   transition: 0.2s ease-in-out;
   opacity: 0.8;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
 }
 nav ul li {
   border-bottom: 2px solid transparent;
@@ -100,17 +102,77 @@ nav ul li:hover {
   margin-top: -400px;
   top: 400px;
 }
-.primary-btn{
+.primary-btn {
   background-color: var(--red600);
   color: white;
 }
-.secondary-btn{
+.secondary-btn {
   background-color: var(--purple300);
   color: white;
 }
-.about-music{
+.about-music {
   margin-top: 500px;
   display: grid;
   place-items: center;
   gap: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.video-section {
+  background-image: url(/images/vid-img.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.gift-section {
+  scroll-margin: 120px;
 }
